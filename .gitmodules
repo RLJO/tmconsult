@@ -4,3 +4,6 @@
 [submodule "company_structure"]
 	path = company_structure
 	url = git@github.com:eduwebgroup/company_structure.git
+[submodule "pos_payment_terms"]
+	path = pos_payment_terms
+	url = git@github.com:eduwebgroup/pos_payment_terms.git
