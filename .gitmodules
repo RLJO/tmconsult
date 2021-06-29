@@ -1,0 +1,3 @@
+[submodule "pos_mandatory_invoice"]
+	path = pos_mandatory_invoice
+	url = git@github.com:eduwebgroup/pos_mandatory_invoice.git
