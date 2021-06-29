@@ -7,3 +7,6 @@
 [submodule "pos_payment_terms"]
 	path = pos_payment_terms
 	url = git@github.com:eduwebgroup/pos_payment_terms.git
+[submodule "panama_divisions"]
+	path = panama_divisions
+	url = git@github.com:eduwebgroup/panama_divisions.git
