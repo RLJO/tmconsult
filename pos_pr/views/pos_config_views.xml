@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+  <record id="pos_config_view_form_inherit_pos_pr" model="ir.ui.view">
+    <field name="name">pos.config.form.view.inherit.por.pr</field>
+    <field name="model">pos.config</field>
+    <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+    <field name="arch" type="xml">
+      <div id="accounting_section" position="after">
+        <h2>Surcharge</h2>
+        <div class="row mt16 o_settings_container" id="accounting_section">
+          <div class="col-12 col-lg-6 o_setting_box" id="surcharge_section">
+            <div class="o_setting_right_pane">
+              <span class="o_form_label">Surcharge journal</span>
+              <div class="text-muted">
+                Configuration for journal entries of PoS surcharges
+              </div>
+              <div class="content-group">
+                <div class="row mt16"
+                     title="Whenever you close a session, the surcharge invoices will be generated in the following journal">
+                  <label string="Surcharge Journal" for="surcharge_journal_id" class="col-lg-3 o_light_label"
+                         widget="selection"/>
+                  <field name="surcharge_journal_id"
+                         required="1" domain="[('company_id', '=', company_id), ('type', '=', 'sale')]"
+                         context="{'default_company_id': company_id, 'default_type': 'sale'}"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </field>
+  </record>
+
+</odoo>
