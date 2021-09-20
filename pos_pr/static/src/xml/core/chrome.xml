@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-name="SynchInvoicePayment" owl="1">
+        <div class="oe_status" t-on-click="synch_invoice_payments">
+            <span t-if="state.msg" class="js_msg">
+                <t t-esc="state.msg" />
+                <span> </span>
+            </span>
+            <div t-if="state.status === 'connected'"  class="js_connected oe_icon oe_green">
+                <i class='fa fa-fw fa-exchange' role="img" aria-label="Synchronisation Connected"
+                   title="Synchronisation Connected"></i>
+            </div>
+            <div t-if="state.status === 'connecting'" class="js_connecting oe_icon">
+                <i class="fa fa-fw fa-spin fa-spinner" role="img"
+                   aria-label="Synchronisation Connecting" title="Synchronisation Connecting"></i>
+            </div>
+            <div t-if="state.status === 'disconnected'" class="js_disconnected oe_icon oe_red">
+                <i class='fa fa-fw fa-exchange' role="img" aria-label="Synchronisation Disconnected"
+                   title="Synchronisation Disconnected"></i>
+            </div>
+            <div t-if="state.status === 'error'" class="js_error oe_icon oe_red">
+                <i class="fa fa-fw fa-warning" role="img" aria-label="Synchronisation Error"
+                   title="Synchronisation Error"></i>
+            </div>
+            <div t-if="state.status === 'warning'" class="js_warning oe_icon oe_orange">
+                <i class='fa fa-fw fa-warning' role="img" aria-label="Synchronisation Connected"
+                   title="Synchronisation Connected"></i>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="Chrome" t-inherit="point_of_sale.Chrome" t-inherit-mode="extension" owl="1">
+        <xpath expr="//SyncNotification" position="before">
+            <SynchInvoicePayment />
+        </xpath>
+    </t>
+</templates>
