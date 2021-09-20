@@ -1,9 +1,6 @@
 [submodule "pos_mandatory_invoice"]
 	path = pos_mandatory_invoice
 	url = git@github.com:eduwebgroup/pos_mandatory_invoice.git
-[submodule "company_structure"]
-	path = company_structure
-	url = git@github.com:eduwebgroup/company_structure.git
 [submodule "pos_payment_terms"]
 	path = pos_payment_terms
 	url = git@github.com:eduwebgroup/pos_payment_terms.git
