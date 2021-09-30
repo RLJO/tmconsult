@@ -7,3 +7,6 @@
 [submodule "panama_divisions"]
 	path = panama_divisions
 	url = git@github.com:eduwebgroup/panama_divisions.git
+[submodule "pos_pr"]
+	path = pos_pr
+	url = git@github.com:eduwebgroup/pos_pr.git
