@@ -10,3 +10,6 @@
 [submodule "pos_pr"]
 	path = pos_pr
 	url = git@github.com:eduwebgroup/pos_pr.git
+[submodule "pos_geolocation"]
+	path = pos_geolocation
+	url = git@github.com:eduwebgroup/pos_geolocation.git
