@@ -7,7 +7,3 @@
 [submodule "panama_divisions"]
 	path = panama_divisions
 	url = git@github.com:eduwebgroup/panama_divisions.git
-[submodule "company_structure"]
-	path = company_structure
-	url = git@github.com:eduwebgroup/company_structure.git
-	branch = 14.0
