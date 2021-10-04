@@ -20,7 +20,7 @@
     # any module necessary for this one to work correctly
     'depends': ['base',
                 'account',
-                'eduweb_js_utils',
+                # 'eduweb_js_utils',
                 'point_of_sale'],
 
     'data': [
