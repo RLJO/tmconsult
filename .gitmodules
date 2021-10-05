@@ -16,3 +16,7 @@
 [submodule "eduweb_js_utils"]
 	path = eduweb_js_utils
 	url = git@github.com:eduwebgroup/eduweb_js_utils.git
+[submodule "company_structure"]
+	path = company_structure
+	url = git@github.com:eduwebgroup/company_structure.git
+	branch = 14.0
