@@ -20,3 +20,7 @@
 	path = company_structure
 	url = git@github.com:eduwebgroup/company_structure.git
 	branch = 14.0
+[submodule "payment_paguelofacil"]
+	path = payment_paguelofacil
+	url = git@github.com:eduwebgroup/payment_paguelofacil.git
+	branch = 14.0
